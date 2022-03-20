@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  shortener:
+    build:
+      context: .
+      dockerfile: ./docker/develop/Dockerfile
+    volumes:
+      - ./app/:/code/app
+    ports:
+      - 8000:8000
