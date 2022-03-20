@@ -4,8 +4,6 @@ COPY ./app ./app
 
 COPY ./requirements.txt ./
 
-RUN chmod a+rw ./app ./app/*
-
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
