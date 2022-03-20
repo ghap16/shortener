@@ -16,3 +16,8 @@ $ docker-compose up
 
 **Open swagger**
 [http://localhost:8000/docs](http://localhost:8000/docs)
+
+**Run tests**
+```
+$ docker-compose run shortener pytest
+```
