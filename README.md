@@ -21,3 +21,11 @@ $ docker-compose up
 ```
 $ docker-compose run shortener pytest
 ```
+
+### Example
+
+**Open Swagger**
+[https://8zxck2mgei.execute-api.us-east-1.amazonaws.com/dev/docs](https://8zxck2mgei.execute-api.us-east-1.amazonaws.com/dev/docs)
+
+**Open ReDoc**
+[https://8zxck2mgei.execute-api.us-east-1.amazonaws.com/dev/redoc](https://8zxck2mgei.execute-api.us-east-1.amazonaws.com/dev/redoc)
