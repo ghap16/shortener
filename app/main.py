@@ -1,10 +1,9 @@
 import uvicorn
-
 from fastapi import FastAPI
 from mangum import Mangum
 
 from .api import api_router
-from .database import engine, Base
+from .database import Base, engine
 
 Base.metadata.create_all(bind=engine)
 
