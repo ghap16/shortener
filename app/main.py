@@ -3,11 +3,12 @@ from fastapi import FastAPI
 from mangum import Mangum
 
 from .api import api_router
+from .config import settings
 from .database import Base, engine
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+app = FastAPI(openapi_prefix=settings.openapi_prefix)
 
 app.include_router(api_router)
 
